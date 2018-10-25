@@ -1,0 +1,25 @@
+{
+  "name": "cat-test",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "npm": "6.1.0",
+    "node": "8.11.3"
+  },
+  "dependencies": {
+    "react-scripts": "^1.1.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "node-sass": "^4.9.3",
+    "onchange": "^4.1.0"
+  },
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o src/assets/css src/assets/scss",
+    "build:css": "npm run scss",
+    "watch:css": "onchange \"/src/assets/scss/**/*.scss\" -- npm run build:css",
+    "start": "react-scripts start ",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
