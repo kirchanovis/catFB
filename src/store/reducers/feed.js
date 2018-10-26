@@ -6,6 +6,7 @@ const initialState = [
             auxportions: 'мышь в подарок',
             kg: '0,5',
             down: 'Чего сидишь? Порадуй котэ, купи.',
+            desc: 'Печень утки разварная с артишоками.',
             buy: false,
             empty: false,
             hover: false
@@ -16,6 +17,7 @@ const initialState = [
             portions: '40',
             auxportions: '2 мыши в подарок',
             kg: '2',
+            desc: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
             buy: true,
             empty: false,
             hover: true
@@ -26,6 +28,7 @@ const initialState = [
             portions: '100',
             auxportions: '5 мышей в подарок',
             kg: '5',
+            desc: 'Филе из цыплят с трюфелями в бульоне.',
             buy: false,
             empty: true,
             hover: false
@@ -37,6 +40,8 @@ export default function (state=initialState, action) {
         case 'CHOOSE_FEED':
             return state
         case 'OVER_FEED':
+            return state;
+        case 'UPDATE_DESCRIPTION':
             return state;
         case 'OUT_FEED':
             // action.payload

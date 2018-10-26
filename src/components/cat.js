@@ -1,6 +1,32 @@
 import React, { Component } from 'react'
 
 class Cat extends Component {
+  constructor(props) {
+    super(props);
+    this.desc = props.data.desc;
+  }
+  showDesc() {
+    if(this.props.data.empty) {
+      return (
+        <span className="block-down__text block-down__text_empty">
+          Печалька, {this.props.data.additive} закончился.
+        </span>
+      )
+    } else if(this.props.data.buy) {
+      return (
+        <span className="block-down__text">
+          <input type="text" value={this.desc} onChange={this.props.onChange} />
+        </span>
+      )
+    } else {
+      return (
+        <span className="block-down__text">
+          Чего сидишь? Порадуй котэ,  
+          <span onClick={this.props.onClick} className="block-down__link" > купи.</span>
+        </span>
+      )
+    }
+  }
   render() {
     return (
       <div className="block">
@@ -22,7 +48,7 @@ class Cat extends Component {
             </div>
           </div>
         </div>
-        <div className="block-down"><span className="block-down__text">Чего сидишь? Порадуй котэ, <span onClick={this.props.onClick} className="block-down__link" >купи.</span></span></div>
+        <div className="block-down">{this.showDesc()}</div>
       </div>
     )
   }
