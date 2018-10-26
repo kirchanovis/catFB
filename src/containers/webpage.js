@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Title from './title'
-import Cat from './cat'
+import Title from '../components/title'
+import Cat from '../components/cat'
 
 class Webpage extends Component {
     render() {
