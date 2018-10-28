@@ -1,8 +1,8 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux'
 import feedReducers from './feed'
 
 const allReducers = combineReducers({
-    feed: feedReducers
-});
+  feed: feedReducers
+})
 
 export default allReducers
