@@ -16,7 +16,7 @@ $colorTextLink: #1698d9;
 body {
  padding: 0;
  margin: 0;
- background-image: url('~/bg.png');
+ background-image: url('/bg.png');
 }
 .bg-body{
   position: fixed;
@@ -133,7 +133,7 @@ body {
     }
   }
   &__cat{
-    background-image: url('~/funbox_logo.png');
+    background-image: url('/funbox_logo.png');
     background-repeat: no-repeat; 
     background-size: 368px 360px;
     position: absolute;
