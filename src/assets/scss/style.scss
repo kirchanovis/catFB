@@ -91,6 +91,12 @@ body {
       }
     }
   }
+  &__mouse{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+  }
   &__aux{
     position: relative;
     background: linear-gradient(135deg, transparent 24px, #f2f2f2 0) top left;

@@ -30,6 +30,7 @@ class Cat extends Component {
           onClick={this.props.onClick}
           onMouseOver={this.props.onMouseOver}
           onMouseOut={this.props.onMouseOut}>
+          <div className="block__mouse"></div>
           <div className='block__aux'>
             <p className='block__adv' >{this.props.data.hover && this.props.data.buy ? (<span className='block__adv_hover'>Котэ не одобряет?</span>) : 'Сказочное заморское яство' }</p>
             <h1 className='block__title'>Нямушка </h1>
