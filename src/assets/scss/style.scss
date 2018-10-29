@@ -61,6 +61,7 @@ body {
     padding: 4px;
     cursor: pointer;
     text-align: center;
+    position: relative;
     &.hover{
       background: linear-gradient(135deg, transparent 25px, $colorBlockDefaultHover 0) top left;
     }
